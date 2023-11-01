@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+*, *::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(185, 41%, 84%);
+    min-height: 100vh;
+    padding: 4rem 0 0 0;
+}
+
+h1{
+    text-transform: uppercase;
+    color: hsl(183, 100%, 15%);
+    letter-spacing: 0.9rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+main{
+    width: 23rem;
+    background:  hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text p{
+    color: #cf6840;
+    display: none;
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+}
+
+input[type="text"]{
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+input::placeholder{
+    color:  hsl(186, 14%, 43%);
+}
+
+input:hover{
+    border: 1px solid hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+.input-div{
+    position: relative;
+}
+
+.icon-dollar, .icon-person{
+    position: absolute;
+    left: 20px;
+    top: 26px;
+}
+
+.bill-input, .numPeople-input{
+    width: 100%;
+    padding: 0.8rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: hsl(189, 41%, 97%);
+    margin: 0.5rem 0 2.5rem  0;
+    border: 1px solid hsl(189, 41%, 97%);
+}
+
+.tip-percentage{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0 2rem 0;
+}
+
+.tip-percentage-box{
+    background: hsl(183, 100%, 15%);
+    width: 9rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.tip-percentage-box div{
+    color: hsl(0, 0%, 100%);
+}
+
+.tip-percentage > div:hover{
+    background: hsl(172, 67%, 75%);
+    cursor: pointer;
+}
+
+.tip-percentage > div div:hover{
+    color: hsl(183, 100%, 15%);
+}
+
+.custom-input{
+    border: none;
+    outline: none;
+    background: hsl(189, 41%, 97%); 
+    border: 1px solid hsl(189, 41%, 97%);
+}
+
+.result-container{
+    background: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+.tip-amount, .total-amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.tip-amount h2, .total-amount h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+}
+
+.tip-amount p, .total-amount p{
+    color: hsl(186, 14%, 43%);
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.calculated-tip-amount h2, .calculated-total-amount h2{
+    color: hsl(172, 67%, 45%);
+    font-size: 2rem;
+}
+
+.reset-btn{
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    text-align: center;
+    background: hsl(172, 67%, 45%);
+    text-transform: uppercase;
+}
+
+.reset-btn:hover{
+    background: hsl(172, 67%, 75%);
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 4rem 0;
+    }
+
+    main{
+        width: 64rem;
+        height: 30rem;
+        border-radius: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .container{
+        display: flex;
+        gap: 3rem;     
+    }
+
+    .input-container{
+        width: 45%;
+        height: 28rem;
+    }
+
+    .result-container{
+        width: 50%;
+        height: 26rem;
+        padding: 3rem;
+    }
+
+    .tip-percentage{
+        margin-bottom: 3rem;
+    }
+
+    .tip-percentage-box{
+        width: 8rem;
+    }
+
+    .custom-input::placeholder{
+        text-align: center;    
+    }
+
+    .tip-amount h2, .total-amount h2{
+        font-size: 1.2rem;
+    }
+    
+    .tip-amount p, .total-amount p{
+        font-size: 1rem;
+    }
+
+
+    .calculated-tip-amount h2, .calculated-total-amount h2{
+        font-size: 3rem;
+    }
+
+    .reset-btn{
+        margin-top: 3.5rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+  }
