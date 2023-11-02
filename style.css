@@ -18,12 +18,12 @@ body{
 }
 
 .logo{
-    text-align: center;
     margin-bottom: 3rem;
+    margin-left: 28.3rem;
 }
 
 
-main{
+.main-container{
     width: 23rem;
     background:  hsl(0, 0%, 100%);
     padding: 2rem;
@@ -40,7 +40,7 @@ main{
     display: none;
 }
 
-h2{
+h2, h1{
     font-size: 1rem;
     font-weight: 700;
     color: hsl(186, 14%, 43%);
@@ -173,7 +173,7 @@ input:hover{
         padding: 4rem 0;
     }
 
-    main{
+    .main-container{
         width: 64rem;
         height: 30rem;
         border-radius: 1.5rem;
